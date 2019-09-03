@@ -13,30 +13,32 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	<header>
-		<div class="container info-block">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="logo navbar-brand">
-					<span>Behma</span>
-					<span>Alexander</span>
-				</div>
-				<ul class="nav flex-column">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Blog</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
-					</li>
-				</ul>
+	<div class="main-screen">
+		<header>
+			<div class="container info-block">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="logo navbar-brand">
+						<span>Behma</span>
+						<span>Alexander</span>
+						<p>Front End<br>Developer</p>
+					</div>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
 				<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -63,20 +65,78 @@
 			</div>
 		</div>
 	</header>
-
-	<section class="features">
-		<div class="container">
-
+	<section class="features col-12 d-flex flex-wrap">
+		<div class="col-4 wrap d-flex flex-wrap">
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/headphones-3683983__340.jpg" alt="#">
+			</div>
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/surfer-3729052__340.jpg" alt="#">
+			</div>
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/home-office-599475__340.jpg" alt="#">
+			</div>
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/headphones-3683983__340.jpg" alt="#">
+			</div>
+		</div>
+		<div class="col-4 wrap d-flex flex-wrap">
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/headphones-3683983__340.jpg" alt="#">
+			</div>
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/search-2041815__340.jpg" alt="#">
+			</div>
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/chess-1993141__340.jpg" alt="#">
+			</div>
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/ecommerce-2607114__340.jpg" alt="#">
+			</div>
+		</div>
+		<div class="col-4 wrap d-flex flex-wrap">
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/conference-room-768441__340.jpg" alt="#">
+			</div>
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/feet-1840619__340.jpg" alt="#">
+			</div>
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/klaffer-2834677__340.jpg" alt="#">
+			</div>
+			<div class="wrap__item">
+				<img class="img-fluid" src="images/coffeehouse-2600877__340.jpg" alt="#">
+			</div>
 		</div>
 	</section>
+</div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="js/libs.min.js"></script>
-	<script src="js/vue.js"></script>
-	<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
+
+
+<!--  padding-hack($padding, $object-fit: cover) {
+	position: relative;
+	padding-top: $padding;
+	@content;
+
+	& > * {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: $object-fit;
+	}
+} -->
