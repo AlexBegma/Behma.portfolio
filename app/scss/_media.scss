@@ -1,33 +1,73 @@
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1284px) {
+
 
 }
+
+
 @media screen and (max-width: 991px) {
 
+	.nav-item,
+	.logo.navbar-brand {
+		text-align: left;
+	}
 
+	.logo.navbar-brand span {
+		font-size: $fs-22;
+		font-weight: 500;
+	}
+
+	.logo.navbar-brand p {
+		font-size: $fs-20;
+		font-weight: 400;
+	}
 }
 
 @media screen and (max-width: 767px) {
 
-	.navbar.navbar-light {
-		padding-top: 6px;
-		position: fixed;
-		height: 65px;
-		width: 100%;
-		margin: 0 auto;
-		background-color: $gray-3;
-		z-index: 5;
-		opacity: .8;
+	.main-screen {
+		display: flex;
+		flex-direction: column;
 	}
 
-	.nav-item {
+	header,
+	.header-fullscreen {
+		display: none;
+	}
+
+	.header-smallscreen {
+		display: block;
+		width: 100%;
+		height: 120px;
+		background-color: $gray-3;
+		padding: 0px 20px;
+		color: $white;
+	}
+
+	.navbar-brand {
+		margin-bottom: 10px;
 		margin-right: 0;
+		width: 140px;
+		text-align: center;
+	}
+
+	.navbar-brand span {
+		display: flex;
+		font-size: $fs-20;
+		color: $white;
+		font-weight: 500;
+		margin-bottom: 12px;
+	}
+
+	.features {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 	}
 }
 
 @media screen and (max-width: 576px) {
 
-	.navbar.navbar-light {
-		min-width: 93%;
+	.features {
 		margin: 0 auto;
 	}
 }
